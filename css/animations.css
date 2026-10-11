@@ -1,0 +1,114 @@
+/* =========================================================
+   Keyframes — every section owns a unique animation
+   ========================================================= */
+
+/* Hero: slow morphing aurora */
+@keyframes aurora {
+  0%,100% { transform: translate3d(0,0,0) scale(1); opacity:.9; }
+  50%     { transform: translate3d(4%,-3%,0) scale(1.15); opacity:1; }
+}
+
+/* Palace: floating architecture */
+@keyframes float-slow {
+  0%,100% { transform: translateY(0) rotate(0deg); }
+  50%     { transform: translateY(-14px) rotate(1.5deg); }
+}
+
+/* Chambers: shimmering border sweep */
+@keyframes shimmer-border {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* AI Core: concentric ring rotation + pulse */
+@keyframes ring-spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes core-pulse {
+  0%,100% { box-shadow: 0 0 40px rgba(77,163,255,.5), inset 0 0 40px rgba(138,92,255,.4); }
+  50%     { box-shadow: 0 0 90px rgba(138,92,255,.7), inset 0 0 70px rgba(77,163,255,.55); }
+}
+
+/* Timeline: drawing line + dot pop */
+@keyframes line-grow {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
+}
+@keyframes dot-pulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(138,92,255,.55); }
+  50%     { box-shadow: 0 0 0 14px rgba(138,92,255,0); }
+}
+
+/* Gallery: soft zoom drift */
+@keyframes drift {
+  0%,100% { transform: scale(1.05) translate(0,0); }
+  50%     { transform: scale(1.12) translate(-1%,1%); }
+}
+
+/* Architecture: rotating decorative rings */
+@keyframes rotate-cw  { to { transform: rotate(360deg); } }
+@keyframes rotate-ccw { to { transform: rotate(-360deg); } }
+
+/* Stats: gentle lift breathing */
+@keyframes breathe {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-6px); }
+}
+
+/* Testimonials: gradient border travel */
+@keyframes travel {
+  0%   { background-position: 0% 0%; }
+  100% { background-position: 300% 0%; }
+}
+
+/* Pricing: featured card halo */
+@keyframes halo {
+  0%,100% { box-shadow: 0 0 60px rgba(138,92,255,.35); }
+  50%     { box-shadow: 0 0 110px rgba(77,163,255,.55); }
+}
+
+/* FAQ: subtle icon rotate handled inline via Bootstrap collapse */
+@keyframes icon-fade {
+  from { opacity:0; transform: translateY(6px); }
+  to   { opacity:1; transform: translateY(0); }
+}
+
+/* Contact: input glow travel */
+@keyframes input-glow {
+  0%,100% { box-shadow: 0 0 0 1px rgba(77,163,255,.35); }
+  50%     { box-shadow: 0 0 0 3px rgba(138,92,255,.35); }
+}
+
+/* Footer: logo orbit */
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(14px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(14px) rotate(-360deg); }
+}
+
+/* Utility: fade-up */
+@keyframes fade-up {
+  from { opacity:0; transform: translateY(24px); }
+  to   { opacity:1; transform: translateY(0); }
+}
+
+/* Particle drift for background layer */
+@keyframes particle-a {
+  0%,100% { transform: translate(0,0); }
+  50%     { transform: translate(30px,-40px); }
+}
+@keyframes particle-b {
+  0%,100% { transform: translate(0,0); }
+  50%     { transform: translate(-40px,30px); }
+}
+
+/* Text light sweep */
+@keyframes light-sweep {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Button shine */
+@keyframes shine {
+  0%   { transform: translateX(-120%) skewX(-20deg); }
+  100% { transform: translateX(220%) skewX(-20deg); }
+}

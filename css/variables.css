@@ -1,0 +1,57 @@
+/* =========================================================
+   AI MEMORY PALACE — Design Tokens
+   ========================================================= */
+:root {
+  /* Backgrounds */
+  --bg-primary: #050505;
+  --bg-secondary: #101010;
+  --bg-tertiary: #0a0a0f;
+
+  /* Glass */
+  --glass: rgba(255, 255, 255, 0.06);
+  --glass-strong: rgba(255, 255, 255, 0.10);
+  --glass-border: rgba(255, 255, 255, 0.12);
+
+  /* Accents — cyber luxury */
+  --electric-blue: #4da3ff;
+  --electric-blue-soft: #7bc0ff;
+  --royal-purple: #8a5cff;
+  --royal-purple-soft: #b799ff;
+  --silver: #cfd4dc;
+  --silver-dim: #8a8f98;
+  --white: #ffffff;
+
+  /* Text */
+  --text-primary: #f5f6f8;
+  --text-secondary: #a8adb8;
+  --text-muted: #6b7080;
+
+  /* Gradients */
+  --grad-primary: linear-gradient(135deg, #4da3ff 0%, #8a5cff 100%);
+  --grad-soft:    linear-gradient(135deg, rgba(77,163,255,.18) 0%, rgba(138,92,255,.18) 100%);
+  --grad-text:    linear-gradient(120deg, #ffffff 0%, #cfd4dc 40%, #8a5cff 100%);
+  --grad-border:  linear-gradient(135deg, rgba(77,163,255,.6), rgba(138,92,255,.6));
+  --grad-radial:  radial-gradient(circle at 30% 30%, rgba(77,163,255,.25), transparent 60%),
+                  radial-gradient(circle at 70% 70%, rgba(138,92,255,.22), transparent 55%);
+
+  /* Shadows */
+  --shadow-glow-blue:   0 0 40px rgba(77,163,255,.35);
+  --shadow-glow-purple: 0 0 40px rgba(138,92,255,.35);
+  --shadow-card:        0 20px 60px rgba(0,0,0,.55);
+  --shadow-elev:        0 30px 80px rgba(0,0,0,.65);
+
+  /* Radii */
+  --r-sm: 10px;
+  --r-md: 18px;
+  --r-lg: 28px;
+  --r-xl: 40px;
+  --r-full: 999px;
+
+  /* Type */
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body:    "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+
+  /* Motion */
+  --ease: cubic-bezier(.22,.61,.36,1);
+  --dur: .5s;
+}
